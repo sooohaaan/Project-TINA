@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.header-section {
+    background-image: url('assets/images/banners/header-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+    color: #ffffff;
+    position: relative; /* 배경 이미지 위치를 제어할 때 유용 */
+}
+
+.header-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.header-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.app-buttons img {
+    height: 45px;
+    margin: 0 5px;
+}
+
+.content-section {
+    padding: 50px 20px;
+}
+
+.content-item {
+    margin-bottom: 40px;
+}
+
+.image-placeholder {
+    width: 70%;
+    max-width: 700px;
+    height: 180px;
+    background: repeating-linear-gradient(
+        45deg,
+        #f1f1f1,
+        #f1f1f1 10px,
+        #e0e0e0 10px,
+        #e0e0e0 20px
+    );
+    border-radius: 10px;
+    margin: 0 auto 20px auto;
+}
+
+.content-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content-item p {
+    color: #777;
+}
+
+.content-item .image-placeholder {
+    width: 70%;
+    max-width: 700px;
+    height: 700px;
+    border-radius: 10px;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+    background: repeating-linear-gradient(
+        45deg,
+        #f1f1f1,
+        #f1f1f1 10px,
+        #e0e0e0 10px,
+        #e0e0e0 20px
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-item .image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 이미지가 없거나 경로가 비어있으면 placeholder만 보이도록 설정 */
+.content-item .image-placeholder img[src=""],
+.content-item .image-placeholder img:not([src]) {
+    display: none; /* 이미지 안 보이게 설정 */
+}
+
+.footer-section {
+    padding: 60px 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.footer-section .app-buttons {
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+address {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* 버튼 간격 설정 */
+    margin: 20px 0;
+}
+
+.app-btn {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.app-btn:hover {
+    background-color: #333;
+}
+
+.app-btn img {
+    height: 30px; /* 배지 이미지 높이 설정 */
+    width: auto;
+    margin-right: 8px; /* 이미지와 텍스트 간격 설정 */
+}
+
+.app-btn-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 150px; /* 너의 로고 크기에 맞게 조절 가능 */
+    height: auto;
+}
