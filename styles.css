@@ -21,12 +21,12 @@ body {
 }
 
 .header-section h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
 .header-section p {
-    font-size: 24px;
+    font-size: 20x;
     margin-bottom: 30px;
 }
 
@@ -59,20 +59,20 @@ body {
 }
 
 .content-item h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
     color: #001122;
 }
 
 .content-item p {
     color: #888888;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .content-item .image-placeholder {
     width: 70%;
-    max-width: 700px;
-    height: 700px;
+    max-width:400px;
+    height: 800px;
     border-radius: 24px;
     margin: 0 auto 20px auto;
     overflow: hidden;
@@ -111,7 +111,7 @@ body {
 }
 
 .footer-section h2 {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 28px;
     color: #001122;
 }
@@ -147,14 +147,15 @@ address {
 
 .app-btn {
     display: flex;
+    width: 135px;
     align-items: center;
     background-color: #222222;
     color: #fff;
     text-decoration: none;
-    padding: 15px 15px;
+    padding: 10px 10px;
     border-radius: 8px;
     border: 1px solid #111111;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease;
 }
 
@@ -169,7 +170,7 @@ address {
 }
 
 .app-btn-text {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
 }
 
