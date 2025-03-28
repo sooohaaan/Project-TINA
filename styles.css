@@ -32,7 +32,7 @@ body {
 
 .app-buttons img {
     height: 45px;
-    margin: 0 5px;
+    /* margin: 0 5px; */
 }
 
 .content-section {
@@ -147,12 +147,12 @@ address {
 
 .app-btn {
     display: flex;
-    width: 135px;
+    width: 126px;
     align-items: center;
     background-color: #222222;
     color: #fff;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 8px 8px;
     border-radius: 8px;
     border: 1px solid #111111;
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.5);
