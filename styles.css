@@ -15,15 +15,13 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* padding: 120px 80px; */
     color: #ffffff;
-    /* position: relative; 배경 이미지 위치 제어 */
     place-content: center;
     align-items: center;
     display: flex;
     flex: 0 0 auto;
     flex-flow: column;
-    gap: 20px;
+    gap: 30px;
     height: 600px;
     overflow: hidden;
     padding: 60px;
@@ -45,17 +43,14 @@ body {
 
 .header-section h1 {
     font-size: 40px;
-    /* margin-bottom: 20px; */
 }
 
 .header-section p {
     font-size: 20px;
-    /* margin-bottom: 30px; */
 }
 
 .app-buttons img {
-    height: 45px;
-    /* margin: 0 5px; */
+    height: 25px;
 }
 
 .content-section {
@@ -63,7 +58,6 @@ body {
 }
 
 .content-item {
-    /* margin-bottom: 40px; */
     place-content: center;
     align-items: center;
     display: flex;
@@ -102,12 +96,10 @@ body {
         #e0e0e0 20px
     );
     border-radius: 24px;
-    /* margin: 0 auto 20px auto; */
 }
 
 .content-item h3 {
     font-size: 20px;
-    /* margin-bottom: 10px; */
     color: #001122;
 }
 
@@ -122,7 +114,6 @@ body {
     height: 800px;
     border: 1px solid rgba(0, 0, 0, .06);
     border-radius: 24px;
-    /* margin: 0 auto 20px auto; */
     overflow: hidden;
     background: repeating-linear-gradient(
         45deg,
@@ -178,10 +169,6 @@ body {
     color: #001122;
 }
 
-/* .footer-section .app-buttons {
-    margin-bottom: 30px;
-} */
-
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -204,12 +191,11 @@ address {
     display: flex;
     justify-content: center;
     gap: 20px; /* 버튼 간격 설정 */
-    /* margin: 20px 0; */
 }
 
 .app-btn {
     display: flex;
-    width: 126px;
+    width: 130px;
     align-items: center;
     background-color: #222222;
     color: #fff;
@@ -226,14 +212,14 @@ address {
 }
 
 .app-btn img {
-    height: 30px; /* 배지 이미지 높이 설정 */
+    height: 25px;
     width: auto;
-    margin-right: 8px; /* 이미지와 텍스트 간격 설정 */
+    margin-right: 8px;
 }
 
 .app-btn-text {
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight:200;
 }
 
 .logo img {
@@ -270,13 +256,14 @@ address {
     }
 
     .app-buttons {
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
+        justify-content: center;
     }
 
     .app-btn {
-        width: 100%;
-        max-width: 200px;
+        width: 130px;
+        max-width: none;
     }
 }
 
@@ -296,5 +283,18 @@ address {
 
     .footer-section {
         padding: 60px 20px;
+    }
+
+    .app-buttons {
+        gap: 10px;
+    }
+
+    .app-btn {
+        width: 120px;
+        padding: 6px 6px;
+    }
+
+    .app-btn img {
+        height: 20px;
     }
 }
