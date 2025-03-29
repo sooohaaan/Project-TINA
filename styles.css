@@ -180,6 +180,7 @@ address {
     font-size: 14px;
     color: #777;
     margin-bottom: 10px;
+    font-style: normal;
 }
 
 .copyright {
@@ -195,12 +196,13 @@ address {
 
 .app-btn {
     display: flex;
-    width: 134px;
+    width: auto;
+    min-width: 126px;
     align-items: center;
     background-color: #222222;
     color: #fff;
     text-decoration: none;
-    padding: 8px 8px;
+    padding: 8px 12px;
     border-radius: 8px;
     border: 1px solid #111111;
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.5);
@@ -262,8 +264,8 @@ address {
     }
 
     .app-btn {
-        width: 134px;
-        max-width: none;
+        width: auto;
+        min-width: 120px;
     }
 }
 
@@ -290,8 +292,9 @@ address {
     }
 
     .app-btn {
-        width: 124px;
-        padding: 8px 8px;
+        width: auto;
+        min-width: 110px;
+        padding: 6px 10px;
     }
 
     .app-btn img {
