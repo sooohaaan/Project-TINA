@@ -9,27 +9,34 @@
 </head>
 <body>
     <header class="header-section">
-        <div class="header-text">
-            <h1>티나</h1>
-            <p>"어디에 뭐 있지?"<br>
-                이동하며 발견하는<br>
-                일상 속 미션 리워드 앱</p>
-        </div>
-        <div class="app-frame">
-            <div class="app-buttons">
-                <a href="#" class="app-btn">
-                    <img src="assets/images/badges/icon_appstore.png" alt="App Store">
-                    <span class="app-btn-text">App Store</span>
-                </a>
-                <a href="#" class="app-btn">
-                    <img src="assets/images/badges/icon_googleplay.png" alt="Google Play">
-                    <span class="app-btn-text">Google Play</span>
-                </a>
+        <div class="header-top">
+            <div class="header-text">
+                <h1>티나</h1>
+                <p>"어디에 뭐 있지?"<br>
+                    이동하며 발견하는<br>
+                    일상 속 미션 리워드 앱</p>
             </div>
+            <div class="app-frame">
+                <div class="app-buttons">
+                    <a href="#" class="app-btn">
+                        <img src="assets/images/badges/icon_appstore.png" alt="App Store">
+                        <span class="app-btn-text">App Store</span>
+                    </a>
+                    <a href="#" class="app-btn">
+                        <img src="assets/images/badges/icon_googleplay.png" alt="Google Play">
+                        <span class="app-btn-text">Google Play</span>
+                    </a>
+                </div>
+            </div> 
+        </div>
+        <div>
+            <button class="scroll-btn" onclick="scrollToContent()">
+                <span class="scroll-arrow">↓</span>
+            </button>
         </div>
     </header>
 
-    <section class="content-section">
+    <section class="content-section" id="content-section">
         <div class="content-item">
             <div class="image-placeholder">
                 <!-- 이미지가 있으면 여기 src에 경로를 넣어주세요. (없으면 비워두기) -->
@@ -104,5 +111,12 @@
             <p class="copyright">&copy; 2024 TNKN Corp. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function scrollToContent() {
+            const contentSection = document.getElementById('content-section');
+            contentSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
