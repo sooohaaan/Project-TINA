@@ -21,10 +21,10 @@ body {
     display: flex;
     flex: 0 0 auto;
     flex-flow: column;
-    gap: 60px;
+    gap: 280px;
     height: 932px;
     overflow: hidden;
-    padding: 60px;
+    padding: 240px 60px 60px;
     position: relative;
     width: 100%;
 }
@@ -66,6 +66,15 @@ body {
 .app-buttons img {
     height: 25px;
 }
+
+.arrow {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(45deg);
+  }
 
 .content-section {
     padding: 100px 20px;
@@ -247,9 +256,9 @@ address {
 /* 반응형 디자인 */
 @media screen and (max-width: 768px) {
     .header-section {
-        height: 600px;
-        padding: 40px 20px;
-        gap: 40px;
+        height: 680px;
+        padding: 120px 20px;
+        gap: 120px;
     }
 
     .header-top {
@@ -266,12 +275,8 @@ address {
     }
 
     .scroll-btn {
-        padding: 12px 20px;
+        padding: 12px 16px;
         margin-top: 10px;
-    }
-
-    .scroll-arrow {
-        font-size: 20px;
     }
 
     .content-item .image-placeholder {
@@ -301,9 +306,9 @@ address {
 
 @media screen and (max-width: 480px) {
     .header-section {
-        height: 500px;
-        padding: 30px 15px;
-        gap: 30px;
+        height: 580px;
+        padding: 90px 15px 15px;
+        gap: 90px;
     }
 
     .header-top {
@@ -315,12 +320,8 @@ address {
     }
 
     .scroll-btn {
-        padding: 10px 16px;
+        padding: 10px 14px;
         margin-top: 5px;
-    }
-
-    .scroll-arrow {
-        font-size: 18px;
     }
 
     .content-item .image-placeholder {
@@ -350,7 +351,7 @@ address {
     background: transparent;
     border: 0px solid #ffffff;
     color: #ffffff;
-    padding: 16px 24px;
+    padding: 16px 20px;
     border-radius: 24px;
     cursor: pointer;
     display: flex;
@@ -359,6 +360,8 @@ address {
     gap: 8px;
     transition: all 0.3s ease;
     margin-top: 20px;
+    display: inline-block;
+    animation: bounce 2s infinite;
 }
 
 .scroll-btn:hover {
