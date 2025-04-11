@@ -21,10 +21,10 @@ body {
     display: flex;
     flex: 0 0 auto;
     flex-flow: column;
-    gap: 280px;
-    height: 932px;
+    gap: 200px;
+    height: 880px;
     overflow: hidden;
-    padding: 240px 60px 60px;
+    padding: 240px 60px 60px 60px;
     position: relative;
     width: 100%;
 }
@@ -37,7 +37,7 @@ body {
     flex: 0 0 auto;
     flex-flow: column;
     gap: 60px;
-    height: 280px;
+    height: 400px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -192,7 +192,13 @@ body {
     color: #001122;
 }
 
-.logo {
+.logo-app {
+    font-size: 24px;
+    font-weight: bold;
+    color: #bbb;
+}
+
+.logo-company {
     font-size: 24px;
     font-weight: bold;
     color: #bbb;
@@ -248,8 +254,13 @@ address {
     font-weight:200;
 }
 
-.logo img {
-    width: 80px; /* 너의 로고 크기에 맞게 조절 가능 */
+.logo-app img {
+    width: 80px;
+    height: auto;
+}
+
+.logo-company img {
+    width: 80px;
     height: auto;
 }
 
@@ -257,12 +268,12 @@ address {
 @media screen and (max-width: 768px) {
     .header-section {
         height: 680px;
-        padding: 120px 20px;
+        padding: 140px 20px 20px 20px;
         gap: 120px;
     }
 
     .header-top {
-        height: 240px;
+        height: 300px;
         gap: 40px;
     }
 
